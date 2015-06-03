@@ -14,10 +14,10 @@ function whitehouse_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#size'] = 20;  // define size of the textfield
 
     $form['actions']['submit']['#value'] = t('GO!'); // Change the text on the submit button
-    $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search-button.png');
+    $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . 'sites/default/files/images/search.png');
 
     // Add extra attributes to the text box
-    
+
     // Prevent user from searching the default text
     $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
 

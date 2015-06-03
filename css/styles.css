@@ -50,15 +50,16 @@
     padding: 0;
 }
 
-#navigation a:hover {
+#main-menu a:hover {
     background: #fafafa;
     color: #888;
 }
 
 #block-search-form {
     position: relative;
-    top: -25px;
-    text-align: right;
+    top: -36px;
+    float: right;
+    width: 25%;
 }
 
 #edit-search-block-form--2 {
@@ -66,8 +67,10 @@
     border: none;
     border-bottom: 1px solid white;
     background: rgba(0,0,0,0);
+    outline: none;
 }
 
 #edit-search-block-form--2:focus {
     border: none;
+    border-bottom: 1px solid white;
 }
